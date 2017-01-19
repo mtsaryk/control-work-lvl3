@@ -1,0 +1,598 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+}
+
+.header {
+    display: none;
+    background-image: linear-gradient(to bottom, rgb(42,84,126), rgb(42,51,65));
+	padding:0px 30px;
+}
+
+
+/*оформление радио кнопок*/
+
+.radio {
+    vertical-align: top;
+    margin: 0 3px 0 0;
+    border-radius: 0px;
+    opacity: 0;
+    width: 0px;
+    height: 0px;
+}
+
+.radio + label {
+    width: 35px;
+    height: 25px;
+}
+
+.radio1:checked + label {
+    background: url(../img/t-l-.png);
+}
+
+.radio1:not(checked) + label {
+    background: url(../img/t-l_.png);
+}
+
+.radio2:checked + label {
+    background: url(../img/t-c-.png);
+}
+
+.radio2:not(checked) + label {
+    background: url(../img/t-c_.png);
+}
+
+.radio3:checked + label {
+    background: url(../img/t-r-.png);
+}
+
+.radio3:not(checked) + label {
+    background: url(../img/t-r_.png);
+}
+
+.radioUl:checked + label {
+    background: url(../img/ul-.png);
+}
+
+.radioUl:not(checked) + label {
+    background: url(../img/ul_.png);
+}
+
+.radioOl:checked + label {
+    background: url(../img/ol-.png);
+}
+
+.radioOl:not(checked) + label {
+    background: url(../img/ol_.png);
+}
+
+.radio:not(checked) + label,
+.radio:checked + label {
+    box-sizing: border-box;
+    display: inline-block;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+
+.myBtn {
+	padding: 5px 10px;
+	background: none;
+	border: 1px solid rgb(255, 174, 48);
+	border-radius: 30px;
+	color: white;
+	outline: none;
+}
+
+.myBtn:hover {
+    background-image: linear-gradient(to bottom,#fac72d,#ffac31);
+    color: white;
+}
+
+.myBtn:active {
+	background-image: linear-gradient(to bottom,#fac72d,#ffac31);
+    color: #2a3342;
+}
+
+.mySelect {
+    padding: 4px;
+  background-color: #fff;
+  box-shadow: 0px 10px 32px 0px rgba(0, 0, 0, 0.33),inset 0px 3px 16px 0px rgba(38, 47, 60, 0.33);
+	border-radius: 30px;
+  outline: none;
+    border: none;
+
+}
+
+.controls {
+    margin: auto;
+    padding: 15px;
+    display: flex;
+    align-items: flex-end;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.controls>* {
+    margin: 10px;
+}
+
+.controls>span {
+    display: inline-flex;
+    align-items: flex-end;
+}
+
+#content {
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: auto;
+    padding: 40px;
+}
+
+.popUp {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+}
+
+.popContent {
+    background-color: white;
+    border-radius:30px;
+    max-width: 80%;
+    margin: auto;
+    box-shadow: 0px 0px 8px 5px rgba(0, 0, 0, 0.6);
+}
+
+.login {
+    position: absolute;
+    left: 0px;
+}
+
+.loginModal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(44, 62, 80, .7);
+    z-index: 10;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    display: none;
+}
+
+.loginContent {
+    background: linear-gradient(to bottom,#fff,#dfdede);
+    padding: 15px 40px;
+    border-radius: 10px;
+position: relative;
+}
+
+#login,
+#logout {
+    padding: 3px;
+}
+
+input.logInput, .logBtn {
+    text-transform: none;
+	border: none;
+	border-radius: 18px;
+	width: 230px;
+	font-size: 19px;
+	padding: 6px 30px;
+	margin: 8px auto;
+	outline: none;
+}
+.logInput:focus{
+	box-shadow: 0px 10px 32px 0px rgba(0, 0, 0, 0.33);
+	transform: scale(1.05);
+}
+
+input.logInput::-webkit-input-placeholder {
+    color: #b5b9c1;
+}
+
+input.logInput::-moz-placeholder {
+    color: #b5b9c1;
+}
+
+input.logInput:-moz-placeholder {
+    color: #b5b9c1;
+}
+
+input.logInput:-ms-input-placeholder {
+    color: #b5b9c1;
+}
+
+
+/*Классы для стилизации едитора*/
+
+.ul-n,
+.ol-n {
+    list-style: none;
+}
+
+.ul-s {
+    list-style: square;
+}
+
+.ul-d {
+    list-style: disc;
+}
+
+.ul-c {
+    list-style: circle;
+}
+
+.ol-g {
+    list-style: lower-greek;
+}
+
+.ol-r {
+    list-style: upper-roman;
+}
+
+.ol-a {
+    list-style: lower-alpha;
+}
+
+.ol-d {
+    list-style: decimal;
+}
+
+
+/*---------------------------*/
+
+.f-7 {
+    font-size: 7pt;
+}
+
+.f-8 {
+    font-size: 8pt;
+}
+
+.f-9 {
+    font-size: 9pt;
+}
+
+.f-10 {
+    font-size: 10pt;
+}
+
+.f-11 {
+    font-size: 11pt;
+}
+
+.f-12 {
+    font-size: 12pt;
+}
+
+.f-14 {
+    font-size: 14pt;
+}
+
+.f-16 {
+    font-size: 16pt;
+}
+
+.f-18 {
+    font-size: 18pt;
+}
+
+.f-20 {
+    font-size: 20pt;
+}
+
+.f-24 {
+    font-size: 24pt;
+}
+
+.f-30 {
+    font-size: 30pt;
+}
+
+.f-40 {
+    font-size: 40pt;
+}
+
+.t-c {
+    text-align: center;
+}
+
+.t-l {
+    text-align: left;
+}
+
+.t-r {
+    text-align: right;
+}
+
+.t-j {
+    text-align: justify;
+}
+
+.f-i {
+    font-style: italic;
+}
+
+.f-w {
+    font-weight: 600;
+}
+
+.f-u {
+    text-decoration: underline;
+}
+
+.f-t {
+    text-decoration: line-through;
+}
+
+.ff-o {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.ff-j {
+    font-family: 'Josefin Slab', serif;
+}
+
+.ff-a {
+    font-family: 'Arvo', serif;
+}
+
+.ff-l {
+    font-family: 'Lato', sans-serif;
+}
+
+.ff-v {
+    font-family: 'Vollkorn', serif;
+}
+
+.ff-u {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.ff-old {
+    font-family: 'Old Standard TT', serif;
+}
+
+.mainControls {
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+    align-content: center;
+    align-items: center;
+}
+
+.color {
+    height: 100px;
+    width: 100px;
+    border: 1px solid black;
+	margin: 5px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+	border-radius: 15px;
+}
+
+.colorSet {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    width: 340px;
+}
+
+#colorSelect {
+    display: none;
+}
+
+.bgWrap {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+	padding: 5px;
+	border-radius: 0 0 30px 30px;
+}
+
+.editControls {
+    display: none;
+    justify-content: center;
+    flex-flow: row wrap;
+    align-content: center;
+    align-items: center;
+    padding: 27.5px;
+}
+
+.mainTxt {
+    resize: none;
+    border: none;
+    outline: none;
+    display: none;
+    width: 100%;
+    height: 90%;
+    padding: 40px;
+}
+
+#contentBox {
+    height: 100%;
+    
+}
+
+.hiddenSelect {
+    display: none;
+}
+
+#editPopUp {
+    width: 100%;
+    position: fixed;
+    height: 100%;
+    top: 0;
+    left: 0;
+    /*    background-color: transparent;*/
+    /*    background-color: rgba(0,0,0,.5);*/
+    z-index: 12;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+#listCreate,
+#tableCreate {
+    display: none;
+    flex-flow: column;
+    justify-content: space-around;
+    background-color: white;
+    border-radius: 5px;
+    width: 300px;
+    padding: 30px;
+    margin: auto;
+    box-shadow: 0px 0px 8px 5px rgba(0, 0, 0, 0.6);
+}
+
+#tableCreate {
+    width: 400px;
+    flex-flow: row;
+}
+
+#tableCreate>p>* {
+    margin: 10px;
+}
+
+.miniInput {
+    width: 50px;
+}
+
+.leftCol {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.leftCol>*,
+.rightCol>* {
+    margin: 5px 0;
+}
+
+.rightCol {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.userImg {
+    border: 7px dashed black; 
+}
+
+.logImg {
+	width: 50%;
+	margin: 30px auto;
+}
+
+.loginContent>p {
+	text-align: center;
+}
+
+.closeLog {
+	display: block;
+	background-image: url(../img/close.png);
+	width: 17px;
+	height: 17px;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: contain;
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	cursor: pointer;
+}
+
+.logBtn {
+	color: #fff;
+	background-image: linear-gradient(to bottom,#fac72d,#ffac31);
+	border: none;
+	outline: none;
+	width: 180px;
+	margin-top: 20px;
+}
+
+.myBtn2 {
+	background-color: rgb(38,51,71);
+	color: #fff;
+	border:none;
+	border-radius: 50%;
+	width: 25px;
+	height: 25px;
+	text-align: center;
+	outline: none;
+	 box-shadow: 0px 10px 32px 0px rgba(0, 0, 0, 0.33);
+	text-transform: uppercase;
+	transition: 0.3s;
+}
+
+.myBtn2:hover {
+	background-image: linear-gradient(to bottom,#fac72d,#ffac31);
+	color: #2a3342;
+}
+
+.bgSelect {
+	display: none;
+}
+.bgSelect + label {
+	display: inline-block;
+	cursor: pointer;
+	position: relative;
+	padding-left: 25px;
+	margin-right: 15px;
+	font-size: 16px;
+	background-image: none;
+	background-repeat: no-repeat;
+	background-size: contain;
+	color: white;
+}
+.bgSelect:checked + label {
+	background-image: url(../img/c_.png);
+	color: #212834;
+}
+#bgSet {
+	background-image: linear-gradient(to bottom, rgb(42,84,126), rgb(42,51,65));
+	width: 100%;
+	text-align: center;
+	border-radius: 30px 30px 0 0;
+	padding: 10px;
+}
+#bgSet>form {
+	display: inline-block;
+}
+button:hover{
+	transform: scale(1.05);
+}
+.myBtn2.active {
+	background-image: linear-gradient(to bottom,#fac72d,#ffac31);
+	color: #2a3342;
+	transform: scale(1.1);
+}
+
+#myBgLabel {
+	width: 140px;
+	margin: 15px;
+}
+
+.myBtn3 {
+    color: rgb(42,84,126);
+}

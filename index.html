@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/styles.css">
+	<title>Article</title>
+</head>
+
+<body>
+	<header class="header" id="initEditor">
+		<div class="mainControls">
+			<button class="myBtn" id="editBtn">edit</button>
+			<form name="controls" class="controls">
+				<button class="myBtn2 f-w" value="f-w">b</button>
+				<button class="myBtn2 f-i" value="f-i">i</button>
+				<button class="myBtn2 f-u" value="f-u">u</button>
+				<button class="myBtn2 f-t" value="f-t">s</button> <span><input data-t="1" type="radio" name="text-align" value="left" checked class="radio1 radio" id="t-l">
+            <label for="t-l"></label>
+            <input data-t="1" type="radio" name="text-align" value="center" class="radio radio2" id="t-c">
+            <label for="t-c"></label>
+            <input data-t="1" type="radio" name="text-align" value="right" class="radio radio3" id="t-r">
+            <label for="t-r"></label></span>
+			<select name="font-size" data-t="1" class="mySelect">
+					<option value="7pt" class="f-7">7pt</option>
+					<option value="8pt" class="f-8">8pt</option>
+					<option value="9pt" class="f-9">9pt</option>
+					<option value="10pt" class="f-10">10pt</option>
+					<option value="11pt" class="f-11">11pt</option>
+					<option value="12pt" class="f-12">12pt</option>
+					<option value="14pt" class="f-14">14pt</option>
+					<option value="16pt" class="f-16" selected>16pt</option>
+					<option value="18pt" class="f-18">18pt</option>
+					<option value="20pt" class="f-20">20pt</option>
+					<option value="30pt" class="f-30">30pt</option>
+					<option value="40pt" class="f-40">40pt</option>
+				</select>
+				<select name="font-family" data-t="1" class="mySelect">
+					<option value="Georgia">Georgia</option>
+					<option value="Times New Roman">Times New Roman</option>
+					<option value="Arial">Arial</option>
+					<option value="Helvetica">Helvetica</option>
+					<option value="Comic Sans MS">Comic Sans MS</option>
+					<option value="Tahoma">Tahoma</option>
+					<option value="Verdana">Verdana</option>
+					<option value="Geneva">Geneva</option>
+					<option value="Trebuchet MS">Trebuchet MS</option>
+					<option value="Impact">Impact</option>
+					<option value="Open Sans">Open Sans</option>
+					<option value="Ubuntu">Ubuntu</option>
+				</select>	
+			</form>
+			<form class="controls" name="setColors">
+				<button class="myBtn" name="colorBtn" data-s="color">color</button>
+				<button class="myBtn" name="bgBtn" data-s="background-color">background</button>
+			</form>
+		</div>
+		<div class="editControls">
+		
+			<button class="myBtn" id="saveBtn">save</button>
+			<button class="myBtn" id="backBtn">back</button>
+			<button class="myBtn" id="tableBtn" data-c="tableCreate">create table</button>
+			<button class="myBtn" id="listBtn" data-c="listCreate">create list</button>
+		</div>
+	</header>
+	<div class="login">
+		<button class="myBtn2" id="login" style="display:inline-block" title="log-in"><i class="fa fa-sign-in fa-lg" aria-hidden="true"></i></button>
+		<button class="myBtn2" id="logout" style="display:none" title="log-out"><i class="fa fa-sign-out fa-lg" aria-hidden="true"></i></button>
+	</div>
+	<div class="loginModal">
+		<div class="loginContent">
+		<span class="closeLog"></span>
+		<p><img class="logImg" src="img/user.svg" alt=""></p>
+			<p>
+				<label>
+					<input class="logInput" type="text" name="login" id="userLogin" placeholder="Username"> </label>
+			</p>
+			<p>
+				<label>
+					<input autocomplete="off" class="logInput" type="password" name="password" id="userPassword" placeholder="Password"> </label>
+			</p>
+			<p>
+				<button id="userLoginBtn" class="logBtn">Войти</button>
+			</p>
+		</div>
+	</div>
+	<section id="contentBox">
+		<div id="content" class="">
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+			<p>Molestias voluptates eos dolor, harum quasi nulla, labore nobis rerum aperiam in a, ab beatae libero molestiae ut hic.</p>
+			<p>Magni, eveniet, aperiam.</p>
+			<p>Dolore, animi, consectetur? Ipsam consequatur cumque animi quia repellat quod, nam adipisci, officiis sunt quos facilis nobis est, magnam.</p>
+			<p>Autem omnis blanditiis nobis consequuntur ducimus tempora sed non sint, quasi quae et culpa, possimus perferendis neque doloremque in accusamus nihil quo doloribus.</p>
+			<p>Facilis, eligendi consectetur nulla quam eum accusantium, magni eaque iste, neque mollitia nisi similique. Eius velit, distinctio sunt ullam excepturi.</p>
+			<p>Laboriosam aperiam ipsum at eius accusamus quos quaerat, ex sint aliquid nesciunt ipsa non quidem, quas soluta aliquam debitis nihil eveniet minima.</p>
+			<p>Cum id ut veritatis commodi modi quidem aliquam, incidunt reiciendis laboriosam quaerat tempore, ex, qui nostrum voluptatem atque dicta.</p>
+			<p>Necessitatibus autem sint voluptatum reprehenderit, fugiat possimus quisquam quidem beatae distinctio voluptate qui, tenetur sit sed eius rerum nemo similique corrupti natus! Eius asperiores optio amet culpa voluptatum nihil illo nam fugit. </p>
+			<p>Fuga expedita beatae ad quaerat quis incidunt mollitia illum veniam modi, maiores, similique sint libero accusantium sunt quia soluta!</p>
+			<p>Possimus placeat beatae minus rerum ex, tenetur qui nobis sed, necessitatibus incidunt molestias maiores ad, impedit voluptatibus minima a dolore harum!</p>
+			<p>At pariatur blanditiis sit, officia magnam veniam doloribus molestiae non, eligendi amet eum, provident rem quisquam eius placeat deserunt neque quae quasi assumenda optio!</p>
+			<p> Quidem totam dolorum iste laudantium esse rem, incidunt tenetur, obcaecati eius a eveniet voluptas sunt iure praesentium repudiandae aspernatur.</p>
+			<p> Nemo eaque magni, quo iste odio provident harum quos animi vero sint sed, consequatur repellendus autem incidunt tempore totam, dolorem cumque nesciunt nulla quia veritatis officia, aut optio soluta?</p>
+			<p>Illum tenetur, esse in harum excepturi. Optio quaerat est fugit doloremque delectus facere vero ratione temporibus totam autem nesciunt ipsam inventore, repellat qui.</p>
+		</div>
+		<textarea name="mainTxt" id="mainTxt" class="mainTxt"></textarea>
+	</section>
+	<div class="popUp" style="display:none" data-s="">
+		<div class="popContent">
+			<div class="colorSet">
+				<div id="bgSet" style="">
+					<form name="bgForm">
+						
+							<input type="radio" name="bgSelect" id="bgSelect1" value="background-color" class="bgSelect" checked> <label for="bgSelect1">color</label>
+						
+							<input type="radio" id="bgSelect2" name="bgSelect" value="background-img" class="bgSelect"><label for="bgSelect2">img</label>
+						<input type="file" accept="image/*"  style="display:none" id="myBg">
+						 </form>
+						 <p><label for="myBg" style="display:none" id="myBgLabel" class="myBtn">Local image</label></p>
+				</div>
+				<div class="bgWrap">
+				
+					<div class="color" style="background-color:red"></div>
+					<div class="color" style="background-color:blue"></div>
+					<div class="color" style="background-color:green"></div>
+					<div class="color" style="background-color:white"></div>
+					<div class="color" style="background-color:black"></div>
+					<div class="color" style="background-color:grey"></div>
+					<div class="color" style="background-color:aqua"></div>
+					<div class="color" style="background-color:orange"></div>
+					<div class="color" style="background-color:brown"></div>
+					<div class="color" style="background-color:yellow"></div>
+					<div class="color" style="background-color:pink"></div>
+					<div class="color" style="background-color:lime"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="editPopUp">
+		<form id="tableCreate" name="tableCreate">
+			<div class="leftCol">
+				<label>tr
+					<input class="mySelect miniInput" type="text" id="tr" data-m="99"> </label>
+				<label>width
+					<input class="mySelect miniInput" type="text" id="tWidth" data-m="2000"> </label>
+				<label>cellspacing
+					<input class="mySelect miniInput" type="text" id="cellspacing" data-m="99"> </label>
+				<label>border width
+					<input class="mySelect miniInput" type="text" id="bWidth" data-m="99"> </label>
+				<button class="myBtn myBtn3" value="clear">clear</button>
+			</div>
+			<div class="rightCol">
+				<label>td
+					<input class="mySelect miniInput" type="text" id="td" data-m="99"> </label>
+				<label>height
+					<input class="mySelect miniInput" type="text" id="tHeight" data-m="2000"> </label>
+				<label>border color
+					<select class="mySelect miniInput" id="bColor">
+						<option value="red">red</option>
+						<option value="blue">blue</option>
+						<option value="green">green</option>
+						<option value="black">black</option>
+						<option value="yellow">yellow</option>
+						<option value="aqua">aqua</option>
+					</select>
+				</label>
+				<button class="myBtn myBtn3" value="create">create</button>
+			</div>
+		</form>
+		<div id="listCreate">
+			<p class="t-c">
+				<input type="radio" name="choiseList" value="sUl" class="radioUl radio" id="rUl">
+				<label for="rUl"></label>
+				<input type="radio" name="choiseList" value="sOl" class="radio radioOl" id="rOl">
+				<label for="rOl"></label>
+			</p>
+			<p><span class="hiddenSelect" id="sUl"><label><i class="fa fa-list-ul fa-lg" aria-hidden="true"></i>
+<select id="ul" class="mySelect">
+<option value="ul-n">none</option>
+<option value="ul-s">square</option>
+<option value="ul-d">disc</option>
+<option value="ul-c">circle</option>
+</select></label>
+</span> <span class="hiddenSelect" id="sOl">
+<label><i class="fa fa-list-ol fa-lg" aria-hidden="true"></i>
+<select id="ol" class="mySelect">
+<option value="ol-n">none</option>
+<option value="ol-d">1, 2, 3</option>
+<option value="ol-a">A, B, C</option>
+<option value="ol-r">I, II, III</option>
+<option value="ol-g">α, β, γ</option>
+</select>
+</label>
+ </span>
+				<label>&lt;li&gt;
+					<input type="text" name="listItems" id="listItems" placeholder="3" class="mySelect miniInput">
+					<button class="myBtn2" id="liBtn" title="li"><i class="fa fa-plus" aria-hidden="true"></i></button>
+				</label>
+			</p>
+		</div>
+	</div>
+	<script src="https://use.fontawesome.com/a8c1def7e5.js"></script>
+	<script src="js/js.js"></script>
+</body>
+
+</html>
