@@ -596,3 +596,7 @@ button:hover{
 .myBtn3 {
     color: rgb(42,84,126);
 }
+
+#listItemsLabel {
+	display: none;
+}

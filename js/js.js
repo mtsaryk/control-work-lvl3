@@ -263,6 +263,9 @@ for (var i = 0, len = radioList.length; i < len; i++) {
 		else {
 			var hiddenSpan = document.getElementById("sUl");
 		}
+		var listItemsLabel = document.getElementById("listItemsLabel");
+		listItemsLabel.style.display = "inline-block";
+		
 		secretSpan.style.display = "inline-block";
 		hiddenSpan.style.display = "none";
 	})
@@ -296,9 +299,15 @@ function createEditPopUp(t) {
 }
 var liBtn = document.getElementById("liBtn");
 var listItems = document.getElementById("listItems");
+listItems.addEventListener("input",function(){
+	checkVal(this);
+})
 liBtn.addEventListener("click", function (e) {
 	e.preventDefault();
-	mainTxt.value += createList(listItems.value);
+	if(valueValid([listItems])){
+		mainTxt.value += createList(listItems.value);
+	}
+	
 })
 
 function createList(len) {
